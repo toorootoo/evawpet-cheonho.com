@@ -203,6 +203,7 @@ section{position:relative}
 .feat:nth-child(odd) .ic{background:var(--mintbg)}.feat:nth-child(even) .ic{background:var(--cream-2)}
 .feat h3{font-size:1.1rem;margin-bottom:3px}
 .feat p{color:var(--ink-soft);font-size:.9rem}
+.feat-note{display:block;margin-top:6px;font-size:.74rem;color:var(--mint-ink);opacity:.85}
 
 /* curriculum */
 .steps{display:flex;flex-direction:column;gap:12px}
@@ -248,6 +249,9 @@ section{position:relative}
 .rev .who{margin-top:12px;font-family:'Jua',sans-serif;color:var(--mint-ink);font-size:.9rem}
 .rev-cta{margin-top:20px;text-align:center}
 .rev-note{font-size:.8rem;color:var(--ink-soft);margin-top:10px}
+.rev-link{display:inline-block;margin-top:6px;font-size:.78rem;color:var(--mint-ink);
+  text-decoration:none;border-bottom:1px solid rgba(34,185,156,.35);padding-bottom:1px}
+.rev-link:hover{border-bottom-color:var(--mint-deep)}
 
 /* faq */
 .faq{background:var(--cream-2)}
@@ -372,6 +376,7 @@ body{padding-bottom:72px}
     <div class="feat reveal"><div class="ic">🐕</div><div><h3>100% 가정견 실습</h3><p>인형이 아닌 실제 강아지와 함께, 현장과 똑같은 환경에서 손에 익혀요.</p></div></div>
     <div class="feat reveal"><div class="ic">🎀</div><div><h3>개별 진도 수업</h3><p>진도가 느려도 괜찮아요. 내 속도에 맞춰 끝까지 끌어드려요.</p></div></div>
     <div class="feat reveal"><div class="ic">💰</div><div><h3>장학지원</h3><p>비용 부담은 덜고 시작할 수 있도록, 장학지원 제도를 안내해요.</p></div></div>
+    <div class="feat reveal"><div class="ic">✂️</div><div><h3>정날 고정 밴드 제공</h3><p>시저링 기본기를 잡아주는 자체 제작 밴드를 드려요. 학원에서 배운 감각을 집에서도 이어서 연습할 수 있어요.<span class="feat-note">실용신안 출원 중 · 출원번호 20-2026-0000759</span></p></div></div>
     <div class="feat reveal"><div class="ic">💼</div><div><h3>취업·창업 지원</h3><p>포트폴리오 준비부터 취업·창업까지, 수료 이후도 함께해요.</p></div></div>
   </div>
 </div></section>
@@ -436,18 +441,20 @@ body{padding-bottom:72px}
 <section class="pad" id="reviews"><div class="wrap">
   <div class="head reveal">
     <span class="kick">수강생·견주님 후기</span>
-    <h2>후기는 네이버에서<br>직접 확인하세요</h2>
+    <h2>먼저 다녀간 분들의<br>진짜 이야기</h2>
   </div>
-  <!-- 천호점 실제 후기가 모이면 아래 주석을 풀고 채워주세요.
-       다른 지점 후기를 그대로 옮기면 안 됩니다 (표시광고법).
-       발췌 후에는 rev-note에 출처를, 버튼에는 천호점 플레이스 링크를 넣어주세요.
+  <!-- 네이버 플레이스에 공개된 천호점 실제 방문자 리뷰에서 발췌.
+       다른 지점 후기를 그대로 옮기면 안 됩니다 (표시광고법). -->
   <div class="rev-grid">
-    <div class="rev reveal"><div class="stars">★★★★★</div><p class="txt">후기 내용</p><div class="who">— 수강 과정 · 닉네임</div></div>
+    <div class="rev reveal"><div class="stars">★★★★★</div><p class="txt">시저링에서 중요한 정날 고정을 계속 강조해주셔서 기본 잡는 데 도움 많이 되고 있어요. 혼자 연습할 때는 어려웠는데 밴드 덕분에 훨씬 수월해졌어요. 손에 감각 잡는 데 확실히 도움이 되는 느낌이에요. 전체적으로 학생들 신경 많이 써주는 학원이라 만족해서 추천드려요</p><div class="who">— 수강생 · im-l****</div></div>
+    <div class="rev reveal"><div class="stars">★★★★★</div><p class="txt">어느새 자격증 취득 후 실견 시작했습니다. 선생님들 실력이 너무 좋으시고 미용뿐이 아닌 실무에서 참고할만한 안전사항부터 세세한 팁까지 정말 세세히 알려주세요! 정날 교정 밴드도 받았는데 엄청 짱짱해서 교정에 도움이 많이 될 것 같아요</p><div class="who">— 자격증 취득 후 실견 · hd****</div></div>
+    <div class="rev reveal"><div class="stars">★★★★★</div><p class="txt">이바우펫 천호점 다니고 있는데 아주 만족하고 다니고 있습니다. 일단 쌤들 모두 잘 수업을 봐주시고 제 속도에 맞춰 배울 수 있는 점이 너무좋습니다. 정말 가정견 수업은 최고입니다 진짜 견종 다양하게 와서 열심히 포트폴리오 만들고 있어요</p><div class="who">— 수강생 · 필터60</div></div>
+    <div class="rev reveal"><div class="stars">★★★★★</div><p class="txt">시저링 할 때 정날 고정 진짜 꼼꼼하게 봐주셔서 처음보다 손 감각 많이 좋아졌어요! 정날 고정 밴드를 주셔서 집에서도 연습할 수 있어 좋습니다. 실습견들도 가정견이라 냄새가 아예 없고 학원이 넓고 관리 잘 되어 있어서 좋습니다. 학생들 하나하나 신경 써주시고 저도 진짜 똥손이라 고민 많이하고 시작했는데 재밌습니다</p><div class="who">— 입문 수강생 · dm****</div></div>
   </div>
-  -->
   <div class="rev-cta reveal">
-    <a href="https://naver.me/xUw742SS" target="_blank" rel="noopener" class="btn btn-naver btn-block">🟢 네이버 플레이스 리뷰 전체 보기</a>
-    <p class="rev-note">천호점을 다녀가신 분들이 네이버 플레이스에 남긴 후기입니다.<br>상담 오시면 실제 수강생 작업 사진과 포트폴리오도 함께 보여드려요.</p>
+    <p class="rev-note">네이버 플레이스에 등록된 실제 방문자 리뷰에서 발췌했습니다.<br>
+      <a href="https://naver.me/xUw742SS" target="_blank" rel="noopener" class="rev-link">네이버 플레이스 리뷰 전체 보기 →</a>
+    </p>
   </div>
 </div></section>
 
