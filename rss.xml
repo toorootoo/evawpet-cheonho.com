@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>이바우펫 애견미용학원 천호점</title>
+    <link>https://evawpet-cheonho.com/</link>
+    <description>천호 애견미용학원 이바우펫 천호점. 천호역 5번 출구 도보 3분, 월~목 평일반과 토요 주말반으로 100% 가정견 실습을 배워요.</description>
+    <language>ko</language>
+    <lastBuildDate>Mon, 19 Oct 2026 21:00:00 +0900</lastBuildDate>
+    <atom:link href="https://evawpet-cheonho.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>천호 애견미용학원 이바우펫 천호점 | 토요 주말반 · 100% 가정견 실습</title>
+      <link>https://evawpet-cheonho.com/</link>
+      <guid isPermaLink="true">https://evawpet-cheonho.com/</guid>
+      <description>5호선 천호역 5번 출구에서 도보 3분. 월~목 오전·오후·야간반과 토요 주말반 중 편한 반을 골라 다니며, 가정견 실습으로 다양한 견종 포트폴리오를 만들어요. 금요일·일요일·공휴일 휴무.</description>
+      <pubDate>Mon, 19 Oct 2026 21:00:00 +0900</pubDate>
+    </item>
+  </channel>
+</rss>
