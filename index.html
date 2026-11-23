@@ -317,6 +317,25 @@ section{position:relative}
 .ptext h4 + p{margin-top:4px}
 .map-links{display:grid;grid-template-columns:1fr 1fr;gap:9px}
 .map-links .btn{padding:13px 8px;font-size:.92rem}
+/* portfolio */
+.portfolio{background:linear-gradient(180deg,var(--mintbg),var(--cream))}
+.pf-scroll{display:flex;gap:12px;overflow-x:auto;overscroll-behavior-x:contain;
+  scroll-snap-type:x mandatory;scroll-padding-left:20px;-webkit-overflow-scrolling:touch;
+  padding:4px 0 20px 20px;scrollbar-width:none}
+.pf-scroll::-webkit-scrollbar{display:none}
+.pf-scroll::after{content:"";flex:0 0 8px}
+.pf-scroll:focus-visible{outline:2px solid var(--mint-deep);outline-offset:-4px}
+.pf-card{flex:0 0 72%;margin:0;scroll-snap-align:start;border-radius:var(--r);overflow:hidden;
+  background:var(--cream-2);box-shadow:var(--shadow-soft)}
+.pf-card img{width:100%;height:auto;aspect-ratio:3/4;object-fit:cover}
+.pf-bar{display:flex;align-items:center;justify-content:center;gap:14px}
+.pf-nav{width:42px;height:42px;border-radius:50%;border:none;background:#fff;color:var(--mint-ink);
+  display:grid;place-items:center;cursor:pointer;box-shadow:var(--shadow-soft);-webkit-tap-highlight-color:transparent}
+.pf-nav:disabled{opacity:.35;cursor:default}
+.pf-nav:focus-visible{outline:2px solid var(--mint-deep);outline-offset:2px}
+.pf-count{font-family:'Jua',sans-serif;color:var(--ink-soft);font-size:.92rem;min-width:58px;text-align:center}
+.pf-count b{color:var(--pink-deep);font-weight:400}
+.pf-cta{margin-top:22px}
 /* reviews */
 .rev-grid{display:flex;flex-direction:column;gap:14px}
 .rev{background:#fff;border-radius:var(--r);padding:22px 20px 20px;box-shadow:var(--shadow-soft);position:relative}
@@ -473,6 +492,39 @@ body{padding-bottom:72px}
     <div class="feat reveal"><div class="ic">🚇</div><div><h3>천호역 도보 3분</h3><p>5호선 천호역 5번 출구에서 가까워요.<br>강동·송파·광진은 물론 하남·구리에서도 오기 편해요.</p></div></div>
   </div>
 </div></section>
+
+<!-- portfolio -->
+<section class="pad portfolio" id="portfolio">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="kick">포트폴리오</span>
+      <h2>미용을 마친 아이들,<br>한 장씩 넘겨 보세요</h2>
+      <p>견종도 스타일도 저마다 달라요.</p>
+    </div>
+  </div>
+  <!-- 사진 파일은 index.html 과 같은 위치의 portfolio 폴더(portfolio-01.webp ~ 10.webp, 720×960)에 있습니다.
+       '수강생 작품'·지점명·견종·수강 단계 같은 표기는 사실 확인 후에만 넣으세요 (표시광고법). -->
+  <div class="pf-scroll" id="pfScroll" tabindex="0" role="region" aria-label="미용 포트폴리오 사진 10장. 좌우로 넘겨 볼 수 있어요.">
+    <figure class="pf-card"><img src="portfolio/portfolio-01.webp" alt="이바우펫 미용 포트폴리오 – 살구색 강아지" width="720" height="960" loading="lazy" decoding="async"></figure>
+    <figure class="pf-card"><img src="portfolio/portfolio-02.webp" alt="이바우펫 미용 포트폴리오 – 앉아 있는 흰색 강아지" width="720" height="960" loading="lazy" decoding="async"></figure>
+    <figure class="pf-card"><img src="portfolio/portfolio-03.webp" alt="이바우펫 미용 포트폴리오 – 회색 강아지" width="720" height="960" loading="lazy" decoding="async"></figure>
+    <figure class="pf-card"><img src="portfolio/portfolio-04.webp" alt="이바우펫 미용 포트폴리오 – 머리를 묶은 흰색 강아지" width="720" height="960" loading="lazy" decoding="async"></figure>
+    <figure class="pf-card"><img src="portfolio/portfolio-05.webp" alt="이바우펫 미용 포트폴리오 – 꼬리를 올린 흰색 강아지" width="720" height="960" loading="lazy" decoding="async"></figure>
+    <figure class="pf-card"><img src="portfolio/portfolio-06.webp" alt="이바우펫 미용 포트폴리오 – 리본을 맨 회색 강아지" width="720" height="960" loading="lazy" decoding="async"></figure>
+    <figure class="pf-card"><img src="portfolio/portfolio-07.webp" alt="이바우펫 미용 포트폴리오 – 위를 올려다보는 흰색 강아지" width="720" height="960" loading="lazy" decoding="async"></figure>
+    <figure class="pf-card"><img src="portfolio/portfolio-08.webp" alt="이바우펫 미용 포트폴리오 – 귀가 선 흰색 강아지" width="720" height="960" loading="lazy" decoding="async"></figure>
+    <figure class="pf-card"><img src="portfolio/portfolio-09.webp" alt="이바우펫 미용 포트폴리오 – 귀 털이 긴 흰색 강아지" width="720" height="960" loading="lazy" decoding="async"></figure>
+    <figure class="pf-card"><img src="portfolio/portfolio-10.webp" alt="이바우펫 미용 포트폴리오 – 고개를 갸웃한 흰색 강아지" width="720" height="960" loading="lazy" decoding="async"></figure>
+  </div>
+  <div class="wrap">
+    <div class="pf-bar">
+      <button type="button" class="pf-nav" id="pfPrev" aria-label="이전 사진"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+      <span class="pf-count"><b id="pfNow">1</b> / 10</span>
+      <button type="button" class="pf-nav" id="pfNext" aria-label="다음 사진"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+    </div>
+    <div class="pf-cta"><a href="#contact" class="btn btn-pink btn-block" data-track="cta_portfolio">수강료 조회하기 🐾</a></div>
+  </div>
+</section>
 
 <!-- curriculum -->
 <section class="pad" id="curri"><div class="wrap">
@@ -685,7 +737,7 @@ body{padding-bottom:72px}
 <footer>
   <div class="logo"><span class="paw">🐾</span>이바우펫 천호점</div>
   <div class="fnav">
-    <a href="#features">왜 천호점</a><a href="#curri">커리큘럼</a><a href="#schedule">시간표</a><a href="#location">오시는 길</a>
+    <a href="#features">왜 천호점</a><a href="#portfolio">포트폴리오</a><a href="#curri">커리큘럼</a><a href="#schedule">시간표</a><a href="#location">오시는 길</a>
     <a href="#reviews">후기</a><a href="#faq">FAQ</a><a href="#contact">수강료 조회</a>
   </div>
   <p class="fine">
@@ -950,6 +1002,39 @@ function naverConversion(){
       }
     }
   });
+})();
+</script>
+<script>
+/* ───────── 포트폴리오 사진 넘기기 (폼 스크립트와 분리: 한쪽에 문제가 생겨도 다른 쪽은 동작) ───────── */
+(function(){
+  var sc=document.getElementById('pfScroll'); if(!sc) return;
+  var cards=sc.querySelectorAll('.pf-card');
+  var now=document.getElementById('pfNow'), prev=document.getElementById('pfPrev'), next=document.getElementById('pfNext');
+  var reduce=window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function step(){ return cards.length>1 ? cards[1].offsetLeft-cards[0].offsetLeft : sc.clientWidth; }
+  function index(){
+    if(sc.scrollLeft >= sc.scrollWidth-sc.clientWidth-4) return cards.length-1;
+    return Math.max(0, Math.min(cards.length-1, Math.round(sc.scrollLeft/step())));
+  }
+  function update(){ var i=index(); now.textContent=i+1; prev.disabled=(i===0); next.disabled=(i===cards.length-1); }
+  function go(d){ sc.scrollBy({left:d*step(), behavior:reduce?'auto':'smooth'}); }
+  prev.addEventListener('click', function(){ go(-1); });
+  next.addEventListener('click', function(){ go(1); });
+  var timer, sent=false;
+  sc.addEventListener('scroll', function(){
+    clearTimeout(timer); timer=setTimeout(update, 80);
+    if(!sent && sc.scrollLeft>40){ sent=true; if(typeof track==='function') track('portfolio_swipe',{branch:'천호점'}); }
+  }, {passive:true});
+  update();
+  // 이 구역이 화면 가까이 오면 사진 10장을 미리 받아 둠 (넘길 때 빈 칸이 보이지 않도록)
+  if('IntersectionObserver' in window){
+    var pio=new IntersectionObserver(function(es){
+      if(!es[0].isIntersecting) return;
+      Array.prototype.forEach.call(sc.querySelectorAll('img'), function(im){ im.loading='eager'; });
+      pio.disconnect();
+    }, {rootMargin:'600px 0px'});
+    pio.observe(sc);
+  }
 })();
 </script>
 </body>
